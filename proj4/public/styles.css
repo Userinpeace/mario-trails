@@ -1,0 +1,78 @@
+:root {
+    --background-color: #1a1a1a;
+    --text-color: #3e4ccd; 
+    --title-color: #ff4500; 
+    --header-color: #00ff00;
+    --paragraph-color: #011010; 
+    --vibrant-navy-black: #000080; 
+
+body {
+    margin: 0; 
+    padding: 0; 
+    background-color: var(--background-color);
+    background-image: url('background3.gif'); 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: cover; 
+    animation: scrollBackground 10s linear infinite; 
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif
+    text-align: center; 
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: none; 
+    overflow: hidden;
+}
+
+
+@keyframes scrollBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -100% 0;
+    }
+}
+
+h1 {
+    color: var(--header-color);
+}
+
+p {
+    color: var(--paragraph-color);
+}
+
+.title {
+    color: var(--title-color);
+}
+
+#mario {
+    position: absolute;
+    width: 100px; 
+    height: 100px; /* Increased size */
+    background: url('mario.gif') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+}
+
+#clickMeButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: #ff6347; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#clickMeButton:hover {
+    background-color: #ff4500; 
+
+.vibrant-navy-black {
+    color: var(--vibrant-navy-black);
+    font-weight: bold;
+}
